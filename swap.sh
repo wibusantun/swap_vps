@@ -49,6 +49,13 @@ print_success() {
     echo -e "${GREEN}✔ $1${NC}"
 }
 
+# Fungsi untuk menampilkan pesan sukses akhir dengan ASCII art
+print_final_success() {
+    echo -e "${PURPLE}\n[ Instalasi selesai dengan sukses ]\n${NC}"
+    echo "ulimit -SHn 1000000" >> /etc/profile
+    echo -e "${GREEN}✔ $1${NC}"
+}
+
 # Fungsi untuk menampilkan pesan error
 print_error() {
     echo -e "${RED}✘    ✘ $1${NC}"
